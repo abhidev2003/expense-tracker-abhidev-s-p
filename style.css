@@ -1,0 +1,1410 @@
+___________________HEADER__________________________________________________________________________
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0B0812;
+}
+
+
+#header{
+
+    background-color: #09070F;
+
+    display: flex;
+
+    height: 50px;
+
+    width: auto;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin:0px;
+
+    border-bottom: 4px solid #2A2138
+
+}
+
+
+#header h1{
+
+    color:#F5F3F7;
+
+    font-family: 'Segoe UI';
+
+    padding: 6px;
+
+}
+
+
+#header div{
+
+    padding: 10px;
+
+}
+
+
+#header div span{
+
+    color:#A9A1B5;
+
+    font-family: 'Segoe UI';
+
+    padding: 6px;
+
+}
+
+
+/* ____________Header-End_________________________________________________________________________________ */
+
+
+/*_________________Main____________________________________________________________________________*/
+
+
+#FirstSection{
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+/* ProfileCard */
+
+#ProfileCard{
+
+    height: 300px;
+
+    width: 500px;
+
+    margin: 20px;
+
+    display: flex;
+
+    background-color:#15121C;
+
+    border-radius: 10px;
+
+    border: 2px solid #2A2138;
+
+    text-align: center;
+
+}
+
+
+#profileinfo{
+
+    height:200px;
+
+    width: 130px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+    background-color:#1B1823;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    border: 2px solid #2A2138;
+
+    margin-bottom: 50px;
+
+    margin-top: 50px;
+
+}
+
+
+#info h4{
+
+    margin:0px;
+
+}
+
+
+#profileinfo img{
+
+    object-fit: cover;
+
+    height: 100px;
+
+    width: 100px;
+
+    border-radius: 50%;
+
+    padding-top: 20px;
+
+}
+
+
+#profileinfo h4{
+
+    color: white;
+
+    font-family: 'Segoe UI';
+
+}
+
+
+#ProfileCard #info{
+
+    height: 200px;
+
+    width: 250px;
+
+    margin-top: 40px;
+
+    padding: 10px;
+
+    background-color: #1B1823;
+
+    border-radius: 10px;
+
+    border: 2px solid #2A2138;
+
+}
+
+
+#info #income{
+
+    color: #00E676;
+
+    font-family: 'Segoe UI';
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+}
+
+
+#info #remaining{
+
+    color: #00E676;
+
+    font-family: 'Segoe UI';
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+}
+
+
+#info #used{
+
+    color: #FF4D6D;
+
+    font-family: 'Segoe UI';
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+}
+
+
+.stats{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    margin-top: 20px;
+
+    color: #F5F3F7;
+
+    font-family: 'Segoe UI';
+
+}
+
+
+.spanstats{
+
+    color: #A9A1B5;
+
+    font-family: 'Segoe UI';
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+}
+
+
+/*------------------------ ProfileCard end---------------------------------------------------- */
+
+
+/*------------------------- OverView Card------------------------------------------------------ */
+
+
+#overview{
+
+    height: 300px;
+
+    width: 500px;
+
+    margin: 20px;
+
+    background-color:#15121C;
+
+    border-radius: 10px;
+
+    border: 2px solid #2A2138;
+
+    font-family: 'Segoe UI';
+
+}
+
+
+#overview span{
+
+    color: #F5F3F7;
+
+    font-family: 'Segoe Ui';
+
+    margin-left: 5px;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+}
+
+
+#overviewheader {
+
+    padding: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 3px;
+
+    border-bottom: 2px solid #2A2138;
+
+}
+
+
+#overviewheader button{
+
+    padding:10px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+    cursor: pointer;
+
+}
+
+
+#overviewheader button:hover{
+
+    background-color: #2A2138;
+
+}
+
+
+#overviewheader button.active{
+
+    background-color: #00E676;
+
+    color: #09070F;
+
+}
+
+
+#overviewcontent{
+
+    padding: 20px 25px;
+
+}
+
+
+#overviewcontent > p{
+
+    color: #A9A1B5;
+
+    text-align: center;
+
+    margin-top: 60px;
+
+}
+
+
+.overviewstats{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+    height: 180px;
+
+}
+
+
+.overviewstats div{
+
+    background-color: #1B1823;
+
+    border: 1px solid #2A2138;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.overviewstats span{
+
+    color: #A9A1B5;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.overviewstats strong{
+
+    color: #F5F3F7;
+
+    font-size: 20px;
+
+}
+
+
+.overviewstats div:first-child strong{
+
+    color: #00E676;
+
+}
+
+
+.overviewstats div:nth-child(2) strong{
+
+    color: #FF4D6D;
+
+}
+
+
+.overviewstats div:nth-child(3) strong{
+
+    color: #00E676;
+
+}
+
+
+.overviewstats div:nth-child(4) strong{
+
+    color: #FFB547;
+
+}
+
+
+/* ____________________QuickAdd________________________________________________________ */
+
+
+#quickactions{
+
+    height: 200px;
+
+    width: 350px;
+
+    margin: 20px;
+
+    background-color:#15121C;
+
+    border-radius: 10px;
+
+    border: 2px solid #2A2138;
+
+}
+
+
+#quickactionsheader {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    border-bottom: 2px solid #2A2138;
+
+}
+
+
+#quickactionsheader span{
+
+    color: #F5F3F7;
+
+    font-family: 'Segoe Ui';
+
+    margin-left: 5px;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+}
+
+
+#actions{
+
+    display: flex;
+
+    margin: 30px;
+
+}
+
+
+#actions1{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+#actions1 button{
+
+    padding: 10px;
+
+    margin: 10px;
+
+    width: 120px;
+
+    border: none;
+
+    border-radius: 20px;
+
+}
+
+
+#editbudget{
+
+    background-color: #00E676;
+
+    color: #09070F;
+
+}
+
+
+#editbudget:hover{
+
+    background-color: #00C853;
+
+}
+
+
+#editprofile{
+
+    background-color: #FF4D6D;
+
+    color: #09070F;
+
+}
+
+
+#editprofile:hover{
+
+    background-color: #E63E5C;
+
+}
+
+
+#actions2{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+#actions2 button{
+
+    padding: 9px;
+
+    margin: 10px;
+
+    width: 120px;
+
+    border: none;
+
+    border-radius: 20px;
+
+}
+
+
+.secondary{
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+}
+
+
+.secondary:hover{
+
+    background-color: #2A2138;
+
+    color: #F5F3F7;
+
+}
+
+
+/* _____________TRANSACTIONS________________________________________ */
+
+
+/* TRANSACTIONS */
+
+
+#transaction {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background-color: #15121C;
+
+    border-radius: 10px;
+
+    border: 2px solid #2A2138;
+
+    margin: 0;
+
+}
+
+
+.container {
+
+    padding: 20px;
+
+}
+
+
+#transactionheader {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    border-bottom: 2px solid #2A2138;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+
+#addTransaction {
+
+    background-color: #00E676;
+
+    color: #09070F;
+
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+#addTransaction:hover {
+
+    background-color: #00C853;
+
+}
+
+
+#transactionheader span{
+
+    color: #F5F3F7;
+
+    font-family: 'Segoe Ui';
+
+    margin-left: 5px;
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+}
+
+
+#secondaryheader {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 10px;
+
+    color: #A9A1B5;
+
+    font-family: 'Segoe UI';
+
+    font-weight: bold;
+
+    font-size: 20px;
+
+    border-bottom: 2px solid #2A2138;
+
+}
+
+
+#maintransaction{
+
+    height: auto;
+
+}
+
+
+.headerbutton{
+
+    padding: 10px;
+
+    margin: 10px;
+
+    width: 120px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+    cursor: pointer;
+
+}
+
+
+.headerbutton:hover{
+
+    background-color: #2A2138;
+
+    color: #F5F3F7;
+
+}
+
+
+/* TRANSACTION BOX INVISIBLE */
+
+
+#transactionbox{
+
+    border: 2px solid #1B1823;
+
+    height: 400px;
+
+    width: 350px;
+
+    color: white;
+
+    display: none;
+
+    position: absolute;
+
+    top: 45px;
+
+    right: 0px;
+
+    z-index: 100;
+
+    border-radius: 12px;
+
+    background-color: #15121C;
+
+}
+
+
+#transactionformheader{
+
+    align-items: center;
+
+    padding: 2px;
+
+    color: #A9A1B5;
+
+    font-family: 'Segoe UI';
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    border-bottom: 2px solid #2A2138;
+
+    margin-left:10px;
+
+}
+
+
+#transactionformheader h2{
+
+    padding: 2px;
+
+}
+
+
+#transactionmainbody section{
+
+    margin: 20px;
+
+}
+
+
+#transactioncategory span{
+
+    margin: 10px;
+
+}
+
+
+#transactioncategory{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+#transactioncategory .field{
+
+    cursor: pointer;
+
+}
+
+
+#transactionbuttons button{
+
+    margin: 20px;
+
+}
+
+
+#addcategorybutton{
+
+    background-color: #1B1823;
+
+    border: 2px solid #1B1823;
+
+    color: #00E676;
+
+    padding: 10px;
+
+    border-radius:12px;
+
+    cursor: pointer;
+
+}
+
+
+#addcategorybutton:hover{
+
+    background-color:#10814a;
+
+}
+
+
+#addtransactionbutton{
+
+    background-color: #00E676;
+
+    color: #09070F;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
+
+
+#addtransactionbutton:hover{
+
+    background-color: #00C853;
+
+}
+
+
+#canceltransactionbutton{
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+    border: 2px solid #2A2138;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
+
+
+#canceltransactionbutton:hover{
+
+    background-color: #2A2138;
+
+    color: #F5F3F7;
+
+}
+
+
+.field{
+
+    background-color: #1B1823;
+
+    border: 2px solid #2A2138;
+
+    color: #F5F3F7;
+
+    padding: 8px;
+
+    border-radius: 6px;
+
+    box-sizing: border-box;
+
+}
+
+
+.field::placeholder {
+
+    color: #A9A1B5;
+
+}
+
+
+.field:focus {
+
+    border-color: #00E676;
+
+    outline: none;
+
+}
+
+
+/*-------------------- JAVASCRIPT STYLING-------------------------------------------- */
+
+
+#maintransaction table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-family: 'Segoe UI';
+
+}
+
+
+#maintransaction th {
+
+    text-align: left;
+
+    color: #A9A1B5;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    padding: 15px;
+
+    border-bottom: 2px solid #2A2138;
+
+}
+
+
+#maintransaction td {
+
+    color: #F5F3F7;
+
+    padding: 15px;
+
+    border-bottom: 1px solid #2A2138;
+
+}
+
+
+#maintransaction tr:hover {
+
+    background-color: #1C152B;
+
+}
+
+
+/* CATEGORY MODAL */
+
+
+#categorymodal {
+
+    position: fixed;
+
+    top: 25%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 400px;
+
+    height: 400px;
+
+    background-color: #15121C;
+
+    border: 2px solid #2A2138;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    display: none;
+
+    z-index: 200;
+
+}
+
+
+#categorymodalcontent{
+
+    height: 100%;
+
+}
+
+
+#categorymodalcontent h2{
+
+    color: #F5F3F7;
+
+    font-family: 'Segoe UI';
+
+    padding: 10px;
+
+}
+
+
+#categorylist {
+
+    height: 280px;
+
+    overflow-y: auto;
+
+    color: #F5F3F7;
+
+}
+
+
+.categoryitem{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px;
+
+    margin: 5px;
+
+    border-bottom: 1px solid #2A2138;
+
+}
+
+
+.categoryitem span{
+
+    color: #F5F3F7;
+
+}
+
+
+.categoryitem button{
+
+    padding: 6px 10px;
+
+    margin-left: 5px;
+
+    border-radius: 6px;
+
+    border: 1px solid #2A2138;
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+    cursor: pointer;
+
+}
+
+
+.categoryitem button:hover{
+
+    background-color: #2A2138;
+
+    color: #F5F3F7;
+
+}
+
+
+#categorymodalclose {
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+    border: 2px solid #2A2138;
+
+    border-radius: 10px;
+
+    padding: 8px 15px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+}
+
+
+#categorymodalclose:hover {
+
+    background-color: #2A2138;
+
+    color: #F5F3F7;
+
+}
+
+
+#createcategory {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+    align-items: center;
+
+}
+
+
+#catname {
+
+    padding: 10px;
+
+    background-color: #1B1823;
+
+    border: 2px solid #2A2138;
+
+    color: #F5F3F7;
+
+    border-radius: 8px;
+
+}
+
+
+#catname::placeholder{
+
+    color: #A9A1B5;
+
+}
+
+
+#addcategory {
+
+    padding: 10px;
+
+    background-color: #00E676;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+#categorytags {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    padding: 12px 20px;
+
+    border-bottom: 1px solid #2A2138;
+
+}
+
+
+.categorytag {
+
+    padding: 8px 14px;
+
+    border: 1px solid #2A2138;
+
+    border-radius: 20px;
+
+    background-color: #1B1823;
+
+    color: #A9A1B5;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+
+.categorytag:hover {
+
+    background-color: #00E676;
+
+    color: #09070F;
+
+    border-color: #00E676;
+
+}
+
+
+#maintransaction td button {
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+
+}
+
+
+#maintransaction td button:first-child {
+
+    background-color: #1B1823;
+
+    color: #00E676;
+
+    border: 1px solid #00E676;
+
+}
+
+
+#maintransaction td button:first-child:hover {
+
+    background-color: #00E676;
+
+    color: #09070F;
+
+}
+
+
+#maintransaction td button:last-child {
+
+    background-color: #1B1823;
+
+    color: #FF4D6D;
+
+    border: 1px solid #FF4D6D;
+
+}
+
+
+#maintransaction td button:last-child:hover {
+
+    background-color: #FF4D6D;
+
+    color: #09070F;
+
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1200px){
+
+    #FirstSection{
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+@media (max-width: 800px){
+
+    #ProfileCard{
+
+        width: 100%;
+
+    }
+
+
+    #overview{
+
+        width: 100%;
+
+    }
+
+
+    #quickactions{
+
+        width: 100%;
+
+    }
+
+
+    #FirstSection{
+
+        flex-direction: column;
+
+    }
+
+
+    .overviewstats{
+
+        grid-template-columns: repeat(2, 1fr);
+
+        height: auto;
+
+    }
+
+}
+
+
+@media (max-width: 500px){
+
+    #ProfileCard{
+
+        width: auto;
+
+        margin: 10px;
+
+    }
+
+
+    #overview{
+
+        width: auto;
+
+        margin: 10px;
+
+    }
+
+
+    #quickactions{
+
+        width: auto;
+
+        margin: 10px;
+
+    }
+
+
+    .container{
+
+        padding: 10px;
+
+    }
+
+
+    .overviewstats{
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    #overviewheader{
+
+        flex-wrap: wrap;
+
+        gap: 5px;
+
+    }
+
+
+    #transactionbox{
+
+        width: 320px;
+
+        right: -5px;
+
+    }
+
+}

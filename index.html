@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+</head>
+
+
+<body>
+
+
+    <header id="header">
+
+        <h1>ExpenseTracker</h1>
+
+        <div>
+
+            <span>How to use?</span>
+            <span>About</span>
+            <span>Contact</span>
+
+        </div>
+
+    </header>
+
+
+    <main id="main">
+
+
+        <div id="FirstSection">
+
+
+            <div id="ProfileCard">
+
+
+                <div id="profileinfo">
+
+                    <img src="/Resources/profilepic.png"
+                        alt="Profile Picture">
+
+                    <h4 id="profilename">Abhidev S P</h4>
+
+                </div>
+
+
+                <div id="info">
+
+
+                    <div class="stats">
+
+                        <span class="spanstats">
+                            INCOME
+                        </span>
+
+                        <h4 id="income">
+                            ₹0
+                        </h4>
+
+                    </div>
+
+
+                    <div class="stats">
+
+                        <span class="spanstats">
+                            EXPENSES
+                        </span>
+
+                        <h4 id="used">
+                            ₹0
+                        </h4>
+
+                    </div>
+
+
+                    <div class="stats">
+
+                        <span class="spanstats">
+                            BALANCE
+                        </span>
+
+                        <h4 id="remaining">
+                            ₹0
+                        </h4>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div id="overview">
+
+
+                <section id="overviewheader">
+
+                    <span>
+                        Overview
+                    </span>
+
+                    <button id="dayoverview">
+                        This Day
+                    </button>
+
+                    <button id="weekoverview">
+                        This Week
+                    </button>
+
+                    <button id="monthoverview">
+                        This Month
+                    </button>
+
+                    <button id="yearoverview">
+                        This Year
+                    </button>
+
+                </section>
+
+
+                <div id="overviewcontent">
+
+                    <p>
+                        Select a time period to view your overview.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div id="quickactions">
+
+
+                <section id="quickactionsheader">
+
+                    <span>
+                        QuickActions
+                    </span>
+
+                </section>
+
+
+                <section id="actions">
+
+
+                    <section id="actions1">
+
+                        <button id="editbudget">
+                            Edit Budget
+                        </button>
+
+                        <button id="editprofile">
+                            Edit Profile
+                        </button>
+
+                    </section>
+
+
+                    <section id="actions2">
+
+                        <button
+                            id="managecategories"
+                            class="secondary">
+
+                            Manage Categories
+
+                        </button>
+
+
+                        <button
+                            id="exportdata"
+                            class="secondary">
+
+                            Export Data
+
+                        </button>
+
+                    </section>
+
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="container">
+
+
+            <div id="transaction">
+
+
+                <section id="transactionheader">
+
+
+                    <span>
+                        Transactions
+                    </span>
+
+
+                    <button id="addTransaction">
+                        + Add Transaction
+                    </button>
+
+
+
+                    <div id="transactionbox">
+
+
+                        <div id="transactionForm">
+
+
+                            <section id="transactionformheader">
+
+                                <h2>
+                                    Add Transaction
+                                </h2>
+
+                            </section>
+
+
+
+                            <section id="transactionmainbody">
+
+
+                                <form id="transactionform" action="">
+
+
+                                    <section id="amount">
+
+                                        <label for="amountfield">
+                                            Amount
+                                        </label>
+
+                                        <input
+                                            class="field"
+                                            type="number"
+                                            name="amountfield"
+                                            id="amountfield"
+                                            placeholder="Amount">
+
+                                    </section>
+
+
+
+                                    <section id="transactionselect">
+
+                                        <label for="transactionlist">
+                                            Transaction
+                                        </label>
+
+                                        <select
+                                            class="field"
+                                            name="transactionlist"
+                                            id="transactionlist">
+
+                                            <option value="">
+                                                Select Type
+                                            </option>
+
+                                            <option value="income">
+                                                Income
+                                            </option>
+
+                                            <option value="expense">
+                                                Expense
+                                            </option>
+
+                                        </select>
+
+                                    </section>
+
+
+
+                                    <section id="transactiondatesection">
+
+                                        <label for="date">
+                                            Transaction Date
+                                        </label>
+
+                                        <input
+                                            type="date"
+                                            name="date"
+                                            id="date"
+                                            class="field">
+
+                                    </section>
+
+
+
+                                    <section id="transactiondescription">
+
+                                        <label for="description">
+                                            Description
+                                        </label>
+
+                                        <input
+                                            class="field"
+                                            type="text"
+                                            name="description"
+                                            id="description">
+
+                                    </section>
+
+
+
+                                    <section id="transactioncategory">
+
+                                        <label for="category">
+                                            Category
+                                        </label>
+
+
+                                        <span>
+
+                                            <select
+                                                class="field"
+                                                name="category"
+                                                id="category">
+
+                                                <option value="">
+                                                    Select Category
+                                                </option>
+
+                                            </select>
+
+                                        </span>
+
+
+                                        <span>
+
+                                            <button
+                                                id="addcategorybutton"
+                                                type="button">
+
+                                                Add Category
+
+                                            </button>
+
+                                        </span>
+
+
+                                    </section>
+
+
+
+                                    <section id="transactionbuttons">
+
+                                        <button
+                                            id="addtransactionbutton"
+                                            type="submit">
+
+                                            Add Transaction
+
+                                        </button>
+
+
+                                        <button
+                                            id="canceltransactionbutton"
+                                            type="button">
+
+                                            Cancel
+
+                                        </button>
+
+                                    </section>
+
+
+                                </form>
+
+
+                            </section>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <section id="secondaryheader">
+
+
+                    <button
+                        class="headerbutton"
+                        id="allfilter">
+
+                        All
+
+                    </button>
+
+
+                    <button
+                        class="headerbutton"
+                        id="incomefilter">
+
+                        Income
+
+                    </button>
+
+
+                    <button
+                        class="headerbutton"
+                        id="expensefilter">
+
+                        Expense
+
+                    </button>
+
+
+                    <button
+                        class="headerbutton"
+                        id="categoryfilter">
+
+                        Category
+
+                    </button>
+
+
+                </section>
+
+
+                <div id="categorytags"></div>
+
+
+
+                <section id="maintransaction">
+
+
+                    <table>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Description
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Amount
+                                </th>
+
+                                <th>
+                                    Type
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="transactionBody">
+
+                            <!-- JS adds rows here -->
+
+                        </tbody>
+
+
+                    </table>
+
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="categorymodal">
+
+
+            <div id="categorymodalcontent">
+
+
+                <h2>
+                    Manage Categories
+                </h2>
+
+
+                <div id="categorylist">
+
+                </div>
+
+
+                <div id="createcategory">
+
+
+                    <input
+                        type="text"
+                        id="catname"
+                        placeholder="Category Name">
+
+
+                    <button id="addcategory">
+                        Add Category
+                    </button>
+
+
+                </div>
+
+
+                <button id="categorymodalclose">
+                    Close
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
